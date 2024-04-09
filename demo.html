@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- device-width this sets initial width to device width -->
+    <!-- initial-scale sets the zoom level -->
+    <title>Curd App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="https://www.favicon.cc/logo3d/903665.png">
+</head>
+
+<body onload="readAll()">
+    <div class="container">
+        <div class="form_container">
+            <form class="create_form">
+                <input type="text" id="name" class="name" placeholder="Enter Name">
+                <input type="email" id="email" class="email" placeholder="Enter Email">
+                <button type="button" onclick="add()">Create</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class="update_id">
+                <input type="text" class="uname">
+                <input type="email" class="uemail">
+                <button type="button" onclick="update()">Update</button>
+            </form>
+            <div>
+                <button class="addBtn" onclick="createForm()">Add +</button>
+            </div>
+            <br />
+            <table class="table">
+                <thead>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="table_data">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
